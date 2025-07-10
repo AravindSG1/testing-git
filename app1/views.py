@@ -8,6 +8,9 @@ from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required #for login to work on all pages
 
 
+def commitcheck():
+    print('hello')
+
 # Create your views here.
 def loginpage(request):
     if request.method=='GET':
